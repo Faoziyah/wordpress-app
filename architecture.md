@@ -1,19 +1,19 @@
-* Architecture Document
+**Architecture Document**
 * Create a short document called architecture.md (1–2 pages) that explains your deployment. This is not a step-by-step guide of what you did. It is an explanation of why you made the choices you made.
 
-This project deploys a two-tier web application consisting of WordPress and MySQL using Docker containers on an Amazon Web Services EC2 instance.
-
-The goal of this architecture is to demonstrate how a containerized web application can be deployed in the cloud with persistent storage and automated backups.
-
-The deployment includes the following AWS services:
-
-Amazon Elastic Compute Cloud (EC2) – hosts the Docker containers
-
-Amazon Elastic Block Store (EBS) – provides persistent storage for the MySQL database
-
-Amazon Simple Storage Service (S3) – stores database backups
-
-The application runs using Docker Compose, which manages the WordPress and MySQL containers and allows them to communicate over an internal Docker network.
+> This project deploys a two-tier web application consisting of WordPress and MySQL using Docker containers on an Amazon Web Services EC2 instance.
+> 
+> The goal of this architecture is to demonstrate how a containerized web application can be deployed in the cloud with persistent storage and automated backups.
+> 
+> The deployment includes the following AWS services:
+> 
+> Amazon Elastic Compute Cloud (EC2) – hosts the Docker containers
+> 
+> Amazon Elastic Block Store (EBS) – provides persistent storage for the MySQL database
+> 
+> Amazon Simple Storage Service (S3) – stores database backups
+> 
+> The application runs using Docker Compose, which manages the WordPress and MySQL containers and allows them to communicate over an internal Docker network.
 
 * Address the following questions:
 * Draw or describe a simple diagram showing how the components connect: User → EC2 instance → Docker → WordPress + MySQL → EBS volume
